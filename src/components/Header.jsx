@@ -95,6 +95,7 @@ export default function  Header({ carrito, agregarCarrito, quitaUno, vaciarCarri
                     <p className="mt-5 fs-5 text-white">{guitar.descripcion}</p>
                     <p className="text-primary fs-1 fw-black">${guitar.precio}</p>
                     <button 
+                    onClick={() => agregarCarrito(guitar)}
                         type="button"
                         className="btn fs-4 bg-primary text-white py-2 px-5"
                     >Agregar al Carrito</button>
